@@ -59,3 +59,9 @@ section p{
 section p{
     margin-top: 1rem;
 }
+
+section p img {
+    display: inline-block;
+    width: 100%;
+    object-fit: cover;
+}
