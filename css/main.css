@@ -11,8 +11,8 @@ body{
     margin: 0;
     letter-spacing: 0.1rem; /* 1px */
     line-height: 1.6; /* 16px */
-    background-color: #2b2a33;
-    color: #fff;
+    background-color: var(--theme-bg-color);
+    color: var(--theme-text-color);
 }
 h1,h2,h3,p,ul{ /* contexte de balises ayant les mêmes props */
     margin: 0;
@@ -20,6 +20,16 @@ h1,h2,h3,p,ul{ /* contexte de balises ayant les mêmes props */
     font-weight: normal;
     list-style: none;
 }
+
+/* Variables css*/
+:root{
+    --theme-bg-color : #2b2a33; /* toujours commencer par les -- avant de mettre la variable */
+    --theme-text-color : #fff;
+    --theme-link-color : rgb(121, 98, 235);
+    --theme-header-h1-bg : rgba(0, 150, 136,1.0);
+    --theme-btn-primary : #ccc;
+    --theme-btn-secondary : #fafafa;
+} 
 button{
     padding: 0;
     background-color: transparent;
@@ -28,13 +38,13 @@ button{
 }
 a{
     text-decoration: none;
-    color: rgb(121, 98, 235);
+    color: var(--theme-link-color);
     
 }
 /* theme css */
 
 header > h1{
-    background-color: rgba(0, 150, 136,1.0);
+    background-color: var(--theme-header-h1-bg);
     text-align: center;
     line-height: 8rem;
     font-weight:bolder;
