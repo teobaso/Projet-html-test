@@ -27,8 +27,8 @@ h1,h2,h3,p,ul{ /* contexte de balises ayant les mêmes props */
     --theme-text-color : #fff;
     --theme-link-color : rgb(121, 98, 235);
     --theme-header-h1-bg : rgba(0, 150, 136,1.0);
-    --theme-btn-primary : #ccc;
-    --theme-btn-secondary : #fafafa;
+    --theme-btn-primary : #3498db;
+    --theme-btn-secondary : #ccc;
 } 
 button{
     padding: 0;
@@ -42,6 +42,15 @@ a{
     
 }
 /* theme css */
+
+.btn-theme-g{
+    display: inline-block;
+    width: 20rem; /* 200px*/
+    line-height: 3rem;
+    padding: 1rem;
+    background-color: var(--theme-btn-secondary);
+    text-align: center;
+}
 
 header > h1{
     background-color: var(--theme-header-h1-bg);
