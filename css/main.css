@@ -54,6 +54,7 @@ a{
     margin-right: .7rem;
     color: var(--theme-link-color);
     text-transform: uppercase;
+    border-radius: .4rem;
 }
 .btn-primary{
     background-color: var(--theme-btn-primary);
