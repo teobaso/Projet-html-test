@@ -25,11 +25,12 @@ h1,h2,h3,p,ul{ /* contexte de balises ayant les mêmes props */
 :root{
     --theme-bg-color : #2b2a33; /* toujours commencer par les -- avant de mettre la variable */
     --theme-text-color : #fff;
-    --theme-link-color : rgb(121, 98, 235);
+    --theme-link-color : rgb(0, 0, 0);
     --theme-header-h1-bg : rgba(0, 150, 136,1.0);
     --theme-btn-primary : #3498db;
-    --theme-btn-secondary : #ccc;
-} 
+    --theme-btn-secondary : rgb(237, 107, 0);
+    --theme-btn-secondary : rgb(0, 255, 200);
+}
 button{
     padding: 0;
     background-color: transparent;
@@ -44,12 +45,26 @@ a{
 /* theme css */
 
 .btn-theme-g{
-    display: inline-block;
+    display: inline-block; 
     width: 20rem; /* 200px*/
     line-height: 3rem;
     padding: 1rem;
     background-color: var(--theme-btn-secondary);
     text-align: center;
+    margin-right: .7rem;
+    color: var(--theme-link-color);
+}
+.btn-primary{
+    background-color: var(--theme-btn-primary);
+    color: #fff;
+}
+.btn-secondary{
+    background-color: var(--theme-btn-secondary);
+    color: inherit;
+}
+.btn-info{
+    color: var(--theme-text-color);
+    padding: 0.9rem;
 }
 
 header > h1{
